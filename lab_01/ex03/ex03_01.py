@@ -1,6 +1,6 @@
-def tinh_tong_so_chan(1st):
+def tinh_tong_so_chan(lst):
     tong = 0
-    for num in 1st:
+    for num in lst:
         if num % 2 == 0 :
             tong += num
     return tong 
