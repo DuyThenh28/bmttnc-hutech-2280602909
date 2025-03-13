@@ -1,4 +1,4 @@
-from cipher.vigenere import VinegereCipher
+from cipher.vigenere import VigenereCipher
 from flask import Flask, request, jsonify
 from cipher.caesar import CaesarCipher
 app = Flask(__name__)
@@ -23,7 +23,7 @@ def caesar_decrypt():
     return jsonify({'decrypted_message': decrypted_text})
 
 #VIGENERE CIPHER ALGORITHM
-vigenere_cipher = VinegereCipher()
+vigenere_cipher = VigenereCipher()
 
 @app.route("/api/vigenere/encrypt", methods=["POST"])
 def vigenere_encrypt():
