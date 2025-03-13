@@ -25,4 +25,3 @@ class CaesarCipher:
             output_letter = self.alphabet[output_letter]
             decrypted_text.append(output_letter)
         return "".join(decrypted_text)
-        
