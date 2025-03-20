@@ -3,7 +3,6 @@ import os
 sys.path.append("C:/Users/Administrator/Desktop/bmttnc-hutech-2280602909/lab-02/ex_01") 
 
 from flask import Flask, render_template, request, json 
-from flask import Flask, render_template, request
 from cipher.caesar import CaesarCipher
 from cipher.playfair import PlayFairCipher
 from cipher.railfence import RailFenceCipher  # Nhập lớp RailFenceCipher
