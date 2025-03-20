@@ -5,8 +5,8 @@ sys.path.append("C:/Users/Administrator/Desktop/bmttnc-hutech-2280602909/lab-02/
 from flask import Flask, render_template, request, json 
 from cipher.caesar import CaesarCipher
 from cipher.playfair import PlayFairCipher
-from cipher.railfence import RailFenceCipher  # Nhập lớp RailFenceCipher
-from cipher.vigenere import VigenereCipher  # Nhập lớp VigenereCipher
+from cipher.railfence import RailFenceCipher 
+from cipher.vigenere import VigenereCipher  
 
 app = Flask(__name__)
 
