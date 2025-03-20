@@ -1,5 +1,8 @@
 from flask import Flask, render_template, request, json 
+import sys
+sys.path.append("C:/Users/Administrator/Desktop/bmttnc-hutech-2280602909/lab-02/ex_01") 
 from cipher.caesar import CaesarCipher
+
 
 app = Flask(__name__)
 
