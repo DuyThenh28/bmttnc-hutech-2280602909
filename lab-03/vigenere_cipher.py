@@ -1,6 +1,6 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox
-from ui.playfair import Ui_MainWindow
+from ui.vigenere import Ui_MainWindow
 import requests
 
 class MyApp(QMainWindow):
@@ -12,7 +12,7 @@ class MyApp(QMainWindow):
         self.ui.btnDecrypt.clicked.connect(self.call_api_decrypt)
 
     def call_api_encrypt(self):
-        url = "http://127.0.0.1:5000/api/playfair/encrypt"
+        url = "http://127.0.0.1:5000/api/vigenere/encrypt"
         payload = {
             "plain_text": self.ui.txtPlaintext.toPlainText(),
             "key": self.ui.txtKey.toPlainText()
@@ -33,7 +33,7 @@ class MyApp(QMainWindow):
             QMessageBox.critical(self, "Error", f"Request Error: {str(e)}")
 
     def call_api_decrypt(self):
-        url = "http://127.0.0.1:5000/api/playfair/decrypt"
+        url = "http://127.0.0.1:5000/api/vigenere/decrypt"
         payload = {
             "cipher_text": self.ui.txtCiphertext.toPlainText(),
             "key": self.ui.txtKey.toPlainText()

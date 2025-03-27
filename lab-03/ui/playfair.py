@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file './ui/caesar.ui'
+# Form implementation generated from reading ui file './ui/playfair.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.11
 #
@@ -9,6 +9,8 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+import os
+os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] = "../platforms"
 
 
 class Ui_MainWindow(object):
@@ -18,10 +20,10 @@ class Ui_MainWindow(object):
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(30, 80, 47, 13))
+        self.label.setGeometry(QtCore.QRect(30, 80, 70, 13))
         self.label.setObjectName("label")
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
-        self.label_2.setGeometry(QtCore.QRect(30, 200, 61, 21))
+        self.label_2.setGeometry(QtCore.QRect(30, 200, 70, 21))
         self.label_2.setObjectName("label_2")
         self.label_3 = QtWidgets.QLabel(self.centralwidget)
         self.label_3.setGeometry(QtCore.QRect(30, 140, 47, 13))
@@ -63,7 +65,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Playfair Cipher"))
         self.label.setText(_translate("MainWindow", "Plain Text :"))
         self.label_2.setText(_translate("MainWindow", "Cipher Text :"))
         self.label_3.setText(_translate("MainWindow", "Key :"))
